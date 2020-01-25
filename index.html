@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -10,34 +9,5 @@
     <div id="myContainer">
         <img id="dave" class="rotate-img" src="img/dave.png" alt="Winged Armadillo doood">
     </div>
-    <div>
-        <button id="growButton">Grow Armadillo</button>
-        <button id="shrinkButton">Shrink Armadillo</button>
-        <button id="shrinkButton">Rotate Armadillo</button>
-    </div>
 </body>
 <html>
-
-<script>
-    $(document).ready(function(){
-        $("rotateButton").click(function(){
-            $(".image").toggleClass("rotate-img");
-        });
-    });
-
-    $("#growButton").click(function(){
-        $("#myAnimation").animate({
-            left: '+=250px',
-            height: '+=150px',
-            width: '+=150px'
-        });
-    });
-
-    $("#shrinkButton").click(function(){
-        $("#myAnimation").animate({
-            left: '-=250px',
-            height: '-=150px',
-            width: '-=150px'
-        });
-    }); 
-</script>
