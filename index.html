@@ -1,1 +1,38 @@
-FUCK THIS SHIT
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- BODY SECTION -->
+<body id="body">
+    <h1>Armadillo</h1>
+    <div id="myContainer">
+        <div id="myAnimation">
+            <img src="img/armadillo.jpg" alt="Winged Armadillo doood">
+        </div>
+    </div>
+    <div>
+        <button id="growButton">Grow Armadillo</button>
+        <button id="shrinkButton">Shrink Armadillo</button>
+    </div>
+</body>
+<html>
+
+<script>
+    $("#growButton").click(function(){
+        $("#myAnimation").animate({
+            left: '+=250px',
+            height: '+=150px',
+            width: '+=150px'
+        });
+    });
+    $("#shrinkButton").click(function(){
+        $("#myAnimation").animate({
+            left: '-=250px',
+            height: '-=150px',
+            width: '-=150px'
+        });
+    }); 
+</script>
