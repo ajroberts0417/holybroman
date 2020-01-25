@@ -93,11 +93,11 @@ div img {
         opacity: 1;
     }
     60% {
-        transform: translateY(10vh) rotate(160deg);
+        transform: translateY(10vh) rotate(180deg);
         opacity: 1;
     }
     70% {
-        transform: translateY(10vh) rotate(160deg);
+        transform: translateY(10vh) rotate(180deg);
         opacity: 1;
     }
     100% {
