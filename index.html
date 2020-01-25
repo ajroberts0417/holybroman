@@ -10,17 +10,24 @@
     <h1>Armadillo</h1>
     <div id="myContainer">
         <div id="myAnimation">
-            <img src="img/armadillo.jpg" alt="Winged Armadillo doood">
+            <img class="image" src="img/armadillo.jpg" alt="Winged Armadillo doood">
         </div>
     </div>
     <div>
         <button id="growButton">Grow Armadillo</button>
         <button id="shrinkButton">Shrink Armadillo</button>
+        <button id="shrinkButton">Rotate Armadillo</button>
     </div>
 </body>
 <html>
 
 <script>
+    $(document).ready(function(){
+        $("rotateButton").click(function(){
+            $(".image").toggleClass("rotate-img");
+        });
+    });
+
     $("#growButton").click(function(){
         $("#myAnimation").animate({
             left: '+=250px',
@@ -28,6 +35,7 @@
             width: '+=150px'
         });
     });
+
     $("#shrinkButton").click(function(){
         $("#myAnimation").animate({
             left: '-=250px',

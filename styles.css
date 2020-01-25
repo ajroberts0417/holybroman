@@ -22,6 +22,10 @@ div img {
     background: red;
 }
 
+ .rotate-img {
+  transform: rotate(90deg);
+}
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
